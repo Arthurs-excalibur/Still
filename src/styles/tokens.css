@@ -1,0 +1,35 @@
+:root {
+  --paper-bg: #FAF9F6;
+  --paper-surface: #F5F3ED;
+  --paper-hover: #ECE9E1;
+  --paper-border: #E7E4DD;
+  --paper-text: #222222;
+  --paper-muted: #85847F;
+  --paper-accent: #222222;
+  --paper-focus-ring: rgba(34, 34, 34, 0.35);
+  --paper-selection: #E5E1D5;
+}
+
+.dark {
+  --paper-bg: #191816;
+  --paper-surface: #22211E;
+  --paper-hover: #2C2A26;
+  --paper-border: #33312B;
+  --paper-text: #ECEAE4;
+  --paper-muted: #96938B;
+  --paper-accent: #ECEAE4;
+  --paper-focus-ring: rgba(236, 234, 228, 0.4);
+  --paper-selection: #33312B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

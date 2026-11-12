@@ -1,0 +1,53 @@
+@import "../styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: var(--paper-bg);
+    color: var(--paper-text);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--paper-bg);
+    color: var(--paper-text);
+    min-height: 100vh;
+    caret-color: var(--paper-text);
+  }
+
+  ::selection {
+    background-color: var(--paper-selection);
+    color: var(--paper-text);
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--paper-border);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--paper-muted);
+  }
+
+  /* Accessible, visible focus outlines */
+  :focus-visible {
+    outline: 2px solid var(--paper-focus-ring);
+    outline-offset: 2px;
+  }
+}
+
